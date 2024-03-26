@@ -70,6 +70,9 @@
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-linkedin"></i>
             </div>
+            <div class="cv">
+                <button id="cvDownload">Download CV</button>
+            </div>
         </div>
 
         <br>
@@ -413,6 +416,28 @@
                 });
             }
         });
+    });
+
+    //For CV download
+    document.getElementById('cvDownload').addEventListener('click', function() {
+        var filename = 'CV_Ian Gabriel Durian.pdf';
+        var filepath = 'assets/' + filename;
+        var link = document.createElement('a');
+
+        // Set the href attribute to the file path
+        link.href = filepath;
+
+        // Set the download attribute to the filename
+        link.download = filename;
+
+        // Append the link to the body
+        document.body.appendChild(link);
+
+        // Programmatically click the link to trigger the download
+        link.click();
+
+        // Remove the link from the body
+        document.body.removeChild(link);
     });
 
 
