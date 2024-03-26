@@ -12,6 +12,7 @@ body {
     --secondaryColor: #343a40;
     --tertiaryColor: #868e96;
     --lightColor : #dfe2e5;
+    --hoverColor1: #454c54; 
 
     --fontColor1: #e6a891;
     --fontColor2: #fff;
@@ -118,8 +119,6 @@ body {
     line-height: 1;
 }
 
-/* ---------------------------------------------------------------------- */
-
 .container .head .head-contents h1 text {
     color: var(--mainColor);
 }
@@ -149,6 +148,28 @@ body {
 .container .head .head-soc i:hover {
     color: var(--mainColor);
     transform: translate(-5px, -5px);
+}
+
+.container .head .cv {
+    margin-top: 30px;
+}
+
+.container .cv button {
+    margin-left: 80px;
+    padding: 10px;
+    border: none;
+    border: 1px solid black;
+    background-color: var(--secondaryColor);
+    color: var(--fontColor2);
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.container .cv button:hover {
+    background-color: var(--hoverColor1);
 }
 
 /* experience */
@@ -455,8 +476,9 @@ body {
     }
 
     .side-navbar.active {
-        height: 300px;
+        height: 380px;
     }
+
     .name-container {
         display: flex;
         justify-content: space-between;
@@ -513,6 +535,8 @@ body {
         margin-right: 10px;
     }
 
+
+    /* contact */
     .container .contact .map button {
         margin-right: 0;
     }
@@ -541,6 +565,7 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    /* head */
     .container {
         margin:0;
     }
@@ -556,6 +581,18 @@ body {
     .container .head .responsive-pic {
         display: block;
         text-align: center;
+    }
+
+    .container .head .head-soc {
+        justify-content: center;
+    }
+
+    .container .head .cv {
+        text-align: center;
+    }
+
+    .container .cv button {
+        margin: 0;
     }
 
     /* Experience */
