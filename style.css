@@ -235,8 +235,20 @@ body {
     border-radius: 10px;
 }
 
-.container .skills .row .skills-card.expanded {
+.container .skills .row .html.skills-card.expanded {
     height: 300px;
+}
+
+.container .skills .row .css.skills-card.expanded {
+    height: 350px;
+}
+
+.container .skills .row .js.skills-card.expanded {
+    height: 320px;
+}
+
+.container .skills .row .php.skills-card.expanded {
+    height: 370px;
 }
 
 .container .skills .row .skills-card h3 {
@@ -354,37 +366,44 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 20px;
     border-radius: 8px;
     z-index: 10000; /* Ensure it appears above the overlay */
 
 }
 
-.form-container .close-btn {
-    position: absolute;
-    transform: translate(1000%, -50%);
-    cursor: pointer;
-    transition: 0.5s ease-out;
+
+.form-container .inner {
+    margin: 10px;
+    margin-top: 0;
 }
 
-.form-container .close-btn:hover {
+.form-container .close-btn {
+    text-align: right;
+}
+
+.form-container .close-btn span {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+.form-container .close-btn span:hover {
     color: var(--mainColor);
 }
 
-.form-container #subject {
+.form-container .inner #subject {
     border: 1px solid var(--secondaryColor);
     border-radius: 5px;
     padding: 5px;
     margin-bottom: 5px;
 }
 
-.form-container #message {
+.form-container .inner #message {
     border: 1px solid var(--secondaryColor);
     border-radius: 5px;
     margin-bottom: 5px;
 }
 
-.form-container #submit {
+.form-container .inner #submit {
     padding: 10px;
     border: none;
     background-color: var(--mainColor);
@@ -395,7 +414,7 @@ body {
     cursor: pointer;
 }
 
-.form-container #submit:hover {
+.form-container .inner #submit:hover {
     background-color: var(--psuedoMain);
 }
 
@@ -452,9 +471,9 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1280px) {
     /* Contact */
-    .form-container .close-btn {
+    /* .form-container .close-btn {
         transform: translate(930%, -50%);
-    }
+    } */
 }
 
 
