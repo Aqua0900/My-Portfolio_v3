@@ -240,15 +240,15 @@ body {
 }
 
 .container .skills .row .css.skills-card.expanded {
-    height: 350px;
-}
-
-.container .skills .row .js.skills-card.expanded {
     height: 320px;
 }
 
+.container .skills .row .js.skills-card.expanded {
+    height: 310px;
+}
+
 .container .skills .row .php.skills-card.expanded {
-    height: 370px;
+    height: 320px;
 }
 
 .container .skills .row .skills-card h3 {
@@ -476,6 +476,26 @@ body {
     } */
 }
 
+@media only screen and (max-width: 1024px) {
+    /* Skills */
+
+    .container .skills .row .html.skills-card.expanded {
+        height: 300px;
+    }
+    
+    .container .skills .row .css.skills-card.expanded {
+        height: 350px;
+    }
+    
+    .container .skills .row .js.skills-card.expanded {
+        height: 340px;
+    }
+    
+    .container .skills .row .php.skills-card.expanded {
+        height: 360px;
+    }
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
@@ -554,7 +574,6 @@ body {
         margin-right: 10px;
     }
 
-
     /* contact */
     .container .contact .map button {
         margin-right: 0;
@@ -579,6 +598,23 @@ body {
 
     .container .head .head-contents .main {
         display: none;
+    }
+
+    /* skills */
+    .container .skills .row .html.skills-card.expanded {
+        height: 300px;
+    }
+    
+    .container .skills .row .css.skills-card.expanded {
+        height: 350px;
+    }
+    
+    .container .skills .row .js.skills-card.expanded {
+        height: 340px;
+    }
+    
+    .container .skills .row .php.skills-card.expanded {
+        height: 360px;
     }
 }
 
@@ -633,6 +669,22 @@ body {
 
     .container .skills .row .skills-card .skills-para {
         width: 90%;
+    }
+
+    .container .skills .row .html.skills-card.expanded {
+        height: 300px;
+    }
+    
+    .container .skills .row .css.skills-card.expanded {
+        height: 350px;
+    }
+    
+    .container .skills .row .js.skills-card.expanded {
+        height: 340px;
+    }
+    
+    .container .skills .row .php.skills-card.expanded {
+        height: 370px;
     }
 
     /* contact */
